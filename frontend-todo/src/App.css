@@ -1,0 +1,132 @@
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#f4f6f8;
+}
+
+.wrapper{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.todo-box{
+  background:white;
+  padding:28px;
+  width:420px;
+  border-radius:14px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+  transition:transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.todo-box:hover{
+  transform:translateY(-4px);
+  box-shadow:0 12px 25px rgba(0,0,0,0.12);
+}
+
+h2{
+  text-align:center;
+  margin-bottom:20px;
+  color:#333;
+  letter-spacing:1px;
+}
+
+.task-form{
+  display:flex;
+  gap:10px;
+  margin-bottom:20px;
+}
+
+.task-form input{
+  flex:1;
+  padding:10px;
+  border:1px solid #ddd;
+  border-radius:8px;
+  outline:none;
+  transition:all 0.2s ease;
+}
+
+.task-form input:focus{
+  border-color:#4a90e2;
+  box-shadow:0 0 4px rgba(74,144,226,0.3);
+}
+
+.task-form button{
+  padding:10px 16px;
+  border:none;
+  background:#4a90e2;
+  color:white;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:500;
+  transition:all 0.2s ease;
+}
+
+.task-form button:hover{
+  background:#357abd;
+  transform:scale(1.05);
+}
+
+.task-list{
+  list-style:none;
+  padding:0;
+}
+
+.task-list li{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:10px;
+  margin-bottom:8px;
+  border-radius:8px;
+  background:#fafafa;
+  border:1px solid #eee;
+  transition:all 0.2s ease;
+}
+
+.task-list li:hover{
+  background:#f0f4ff;
+}
+
+.task-list li span{
+  margin-left:10px;
+  flex:1;
+}
+
+.done span{
+  text-decoration:line-through;
+  color:gray;
+}
+
+.buttons button{
+  margin-left:5px;
+  padding:6px 10px;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:13px;
+  transition:transform 0.15s ease, opacity 0.15s ease;
+}
+
+.buttons button:hover{
+  transform:scale(1.08);
+  opacity:0.9;
+}
+
+.alert{
+  background:#ffe0e0;
+  padding:8px 10px;
+  margin-bottom:10px;
+  border-radius:6px;
+  display:flex;
+  justify-content:space-between;
+  font-size:14px;
+}
+
+.task-count{
+  text-align:center;
+  margin-top:15px;
+  font-size:14px;
+  color:#555;
+}
