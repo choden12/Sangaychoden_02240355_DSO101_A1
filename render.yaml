@@ -14,6 +14,9 @@ services:
         value: Oug27LJeqBLYW5Sz72Yi2SZBExMJ6QsH
       - key: PORT
         value: 5000
+      - key: NODE_ENV
+        value: production
+
 
   # 🔹 Frontend Service
   - type: web
@@ -24,3 +27,5 @@ services:
     envVars:
       - key: REACT_APP_API_URL
         value: https://be-todo-02240355-6.onrender.com
+      - key: NODE_ENV
+        value: production
