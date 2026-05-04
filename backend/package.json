@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --ci --reporters=default --reporters=jest-junit",
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "echo 'Backend build complete'"
+
   },
   "keywords": [],
   "author": "",
